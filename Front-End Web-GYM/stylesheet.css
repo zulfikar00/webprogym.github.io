@@ -1,0 +1,89 @@
+
+*{
+  font-family:Arial, Helvetica, sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform:capitalize;
+  transition:all .2s linear;
+  float: left;
+}
+body{
+  background: black;
+}
+/* mengatur tampilan pada html */
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+  overflow-x: hidden;
+}
+/* mengatur tampilan pada class logo */
+.logo{
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+/* mengubah warna teks BEStrong */
+span{
+  color: #ff000f;
+}
+/* mengatur tampilan pada class navbar */
+.navbar a{
+ color: white;
+ font-size: 14px;
+ text-decoration: none;
+ padding: 36px;
+ display:inline-block;
+}
+.navbar a:hover{
+  background: #ff000f;
+}
+/* mengatur tampilan pada class header */
+.header{
+  position: fixed;
+  top: 0; left:0; right:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 9%;
+}
+#menu-btn{
+  font-size: 50px;
+  color:white;
+  cursor: pointer;
+  
+}
+/* desain untuk media quaries */
+@media (max-width:1200px){
+html{
+  font-size: 55%;
+}
+.header{
+  padding: 0 20px;
+}
+}
+/* desain untuk media quaries tablet */
+@media (max-width:670px){
+  .header{
+  padding: 2px;
+  }
+  .navbar{
+  position:absolute;
+  top: 99%; left:0; right: 0;
+  background: green;
+  } 
+}
+/* desain untuk media quaries smartphone */
+@media (max-width:350px){
+  html{
+    font-size: 55%;
+
+  }
+  .navbar{
+    position:absolute;
+    top: 99%; left:0; right: 0;
+    background: red;
+  }
+}
